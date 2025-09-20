@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 </head>
-<body>
-    
+<body class="bg-[#F4F5F7] h-[100vh] flex flex-col justify-center items-center">
+    <div class="h-[130px] w-[300px]  bg-[url('./Payoo-MFS-Resources/assets/bg.png')] flex justify-center items-center">
+        <img src="./Payoo-MFS-Resources/assets/Group.png" alt="">
+    </div>
+<form class="bg-white p-10 ">
+    <div class="p-5">
+        <label class="font-semibold">Mobile Number</label>
+        <br>
+        <input type="text" placeholder="Enter Your Number" class="input mt-3 rounded-2xl" />
+    </div>
+ <div class="p-5 rounded-2xl">
+        <label class="font-semibold">4 Digit </label>
+        <br>
+        <input type="text" placeholder="Enter 4 Digit Pin" class="input mt-3 rounded-2xl" />
+    </div>
+    <button class="btn btn-primary mt-3 w-full rounded-3xl" id="loginButton">Login</button>
+</form>
+<script src="./script.js"></script>
 </body>
 </html>
