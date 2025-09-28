@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#F4F5F7] h-[100vh]">
+    <div class="bg-white rounded-b-xl p-3">
+    <div class="min-h-[50px] flex justify-between items-center max-w-lg mx-auto border-b-1 border-gray-400 p-3">
+        <div class="flex">
+            <img src="./Payoo-MFS-Resources/assets/Group.png" alt="" class="h-[50px]">
+            <div>
+                <h2 class="font-semibold">$ <span id="balance">45000</span></h2>
+
+                <p class="text-gray-500">Available Balance</p>
+            </div>
+        </div>
+        <div>
+            <button class="btn !text-gray-500"><i class="fa-solid fa-right-from-bracket rotate-180 !text-gray-500"></i>Log Out</button>
+        </div>
+    </div>
+    <div class="max-w-lg mx-auto mt-8">
+        <h1 class="text-2xl font-semibold">🔥 Welcome to Payooo!</h1>
+        <p class="text-gray-500 mb-5">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+    </div>
+    <div class=" max-w-lg mx-auto  min-h-[200px] grid grid-cols-3 gap-4 ">
+        <div class="text-center p-3 border-1 border-gray-300 rounded-lg">
+            <img src="./Payoo-MFS-Resources/assets/wallet1.png" class="mx-auto" alt="">
+            <p class="text-gray-500">Add Money</p>
+        </div>
+        <div class="text-center p-3 border-1 border-gray-300 rounded-lg">
+            <img src="./Payoo-MFS-Resources/assets/send1.png" class="mx-auto" alt="">
+            <p class="text-gray-500">Cashout</p>
+        </div>
+        <div class="text-center p-3 border-1 border-gray-300 rounded-lg">
+            <img src="./Payoo-MFS-Resources/assets/money1.png" class="mx-auto" alt="">
+            <p class="text-gray-500">Transfer Money</p>
+        </div>
+        <div class="text-center p-3 border-1 border-gray-300 rounded-lg">
+            <img src="./Payoo-MFS-Resources/assets/bonus1.png" class="mx-auto" alt="">
+            <p class="text-gray-500">Get Bonus</p>
+        </div>
+        <div class="text-center p-3 border-1 border-gray-300 rounded-lg">
+            <img src="./Payoo-MFS-Resources/assets/purse1.png" class="mx-auto" alt="">
+            <p class="text-gray-500">Pay Bill</p>
+        </div>
+        <div class="text-center p-3 border-1 border-gray-300 rounded-lg">
+            <img src="./Payoo-MFS-Resources/assets/transaction1.png" class="mx-auto" alt="">
+            <p class="text-gray-500">Transactions</p>
+        </div>
+    </div>
+    </div>
+    <div class="all-form-section max-w-lg mx-auto">
+        <div class="mb-3">
+            <h1 class="my-5 font-bold">Add Money</h1>
+            <form action="" class="bg-white rounded-2xl p-6">
+                <div>
+                    <h1 class="font-semibold">Select A Bank</h1>
+                    <select id="Bank" class="select  mt-3 !rounded-2xl !w-full" >
+  <option>Select Bank</option>
+  <option>AB Bank</option>
+  <option>IFIC Bank</option>
+  <option>DBBL</option>
+</select>
+                </div>
+                 <div>
+                    <label class="font-semibold">Bank Account Number</label>
+        <br>
+        <input id="account-number" type="text" placeholder="Enter 11 digit account number" class="input !w-full bg-white mt-3 !rounded-2xl" />
+    </div>
+                <div>
+                     <label class="font-semibold">Amount to Add</label>
+        <br>
+        <input id="amount-add" type="text" placeholder="Add Amount to Withdraw" class="input bg-white mt-3 !rounded-2xl !w-full"/>
+                </div>
+                 <div>
+                    <label class="font-semibold">Pin Number</label>
+        <br>
+        <input id="add-pin" type="text" placeholder="Enter 4 digit Pin Number" class="input bg-white mt-3 !rounded-2xl !w-full"/> 
+                 </div>
+                 <button class="btn btn-primary mt-3 w-full !rounded-3xl bg-[#0874F2]" id="add-money-btn">Add Money</button>
+            </form>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>    
+
+</html>
