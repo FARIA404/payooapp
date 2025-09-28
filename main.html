@@ -13,6 +13,8 @@
 <body class="bg-[#F4F5F7] h-[100vh]">
     <div class="bg-white rounded-b-xl p-3">
     <div class="min-h-[50px] flex justify-between items-center max-w-lg mx-auto border-b-1 border-gray-400 p-3">
+        
+
         <div class="flex">
             <img src="./Payoo-MFS-Resources/assets/Group.png" alt="" class="h-[50px]">
             <div>
@@ -30,11 +32,11 @@
         <p class="text-gray-500 mb-5">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
     </div>
     <div class=" max-w-lg mx-auto  min-h-[200px] grid grid-cols-3 gap-4 ">
-        <div class="text-center p-3 border-1 border-gray-300 rounded-lg">
+        <div id="add-button" class="text-center p-3 border-1 border-gray-300 rounded-lg">
             <img src="./Payoo-MFS-Resources/assets/wallet1.png" class="mx-auto" alt="">
             <p class="text-gray-500">Add Money</p>
         </div>
-        <div class="text-center p-3 border-1 border-gray-300 rounded-lg">
+        <div id="cash-button" class="text-center p-3 border-1 border-gray-300 rounded-lg">
             <img src="./Payoo-MFS-Resources/assets/send1.png" class="mx-auto" alt="">
             <p class="text-gray-500">Cashout</p>
         </div>
@@ -56,7 +58,8 @@
         </div>
     </div>
     </div>
-    <div class="all-form-section max-w-lg mx-auto">
+    <!-- add money -->
+    <div id="add-money-parent" class="all-form-section max-w-lg mx-auto">
         <div class="mb-3">
             <h1 class="my-5 font-bold">Add Money</h1>
             <form action="" class="bg-white rounded-2xl p-6">
@@ -88,6 +91,31 @@
             </form>
         </div>
     </div>
+<!-- Cash out -->
+    <div id="cash-out-parent">
+        <h1 class="my-5 font-bold">Cash Out</h1>
+        <form action="" class="bg-white rounded-2xl p-6">
+                 <div>
+                    <label class="font-semibold"> 
+                    Agent Number
+                    </label>
+        <br>
+        <input type="text" placeholder="Enter 11 digit number" class="input !w-full bg-white mt-3 !rounded-2xl" />
+    </div>
+                <div>
+                     <label class="font-semibold">Amount </label>
+        <br>
+        <input id="amount-withdraw" type="text" placeholder="Enter Amount to Withdraw" class="input bg-white mt-3 !rounded-2xl !w-full"/>
+                </div>
+                 <div>
+                    <label class="font-semibold">Pin Number</label>
+        <br>
+        <input type="text" placeholder="Enter 4 digit Pin Number" class="input bg-white mt-3 !rounded-2xl !w-full"/> 
+                 </div>
+                 <button id="withdraw-btn" class="btn btn-primary mt-3 w-full !rounded-3xl bg-[#0874F2]" >Withdraw Money</button>
+            </form> 
+    </div>
+
     <script src="./main.js"></script>
 </body>    
 

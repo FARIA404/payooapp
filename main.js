@@ -1,7 +1,7 @@
+// add money
 const validPin = 1234
 document.getElementById("add-money-btn").addEventListener("click",function(e){
     e.preventDefault();
-    console.log("add money button clicked")
     const bank = document.getElementById("Bank").value
     const accountNumber = document.getElementById("account-number").value
 
@@ -15,7 +15,7 @@ document.getElementById("add-money-btn").addEventListener("click",function(e){
     alert("Please Provide Valid Account Number")
     return;
    }
-   
+
    if(pin !==validPin){
     alert("please provide valid pin")
     return;
@@ -25,3 +25,39 @@ document.getElementById("add-money-btn").addEventListener("click",function(e){
 
     document.getElementById("balance").innerText = totalBalance
 });
+
+// cashout
+document.getElementById("withdraw-btn").addEventListener("click",function(e){
+    e.preventDefault();
+    const amount = parseInt(document.getElementById("amount-withdraw").value)
+
+    const balance = parseInt(document.getElementById("balance").value)
+
+    const availableBalance = balance-amount 
+    console.log(availableBalance)
+    
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+// toggling
+document.getElementById("add-button").addEventListener("click",function(){
+    document.getElementById("cash-out-parent").style.display = "none"
+    document.getElementById("add-money-parent").style.display = "block"
+})
+
+document.getElementById("cash-button").addEventListener("click",function(){
+    document.getElementById("add-money-parent").style.display = "none"
+    document.getElementById("cash-out-parent").style.display = "block"
+})
