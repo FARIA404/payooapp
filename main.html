@@ -40,7 +40,7 @@
             <img src="./Payoo-MFS-Resources/assets/send1.png" class="mx-auto" alt="">
             <p class="text-gray-500">Cashout</p>
         </div>
-        <div class="text-center p-3 border-1 border-gray-300 rounded-lg">
+        <div id="transfer-btn" class="text-center p-3 border-1 border-gray-300 rounded-lg">
             <img src="./Payoo-MFS-Resources/assets/money1.png" class="mx-auto" alt="">
             <p class="text-gray-500">Transfer Money</p>
         </div>
@@ -59,7 +59,7 @@
     </div>
     </div>
     <!-- add money -->
-    <div id="add-money-parent" class="all-form-section max-w-lg mx-auto">
+    <div id="add-money-parent" class="all-form-section max-w-lg mx-auto" style="display: none;">
         <div class="mb-3">
             <h1 class="my-5 font-bold">Add Money</h1>
             <form action="" class="bg-white rounded-2xl p-6">
@@ -92,7 +92,7 @@
         </div>
     </div>
 <!-- Cash out -->
-    <div id="cash-out-parent">
+    <div class="mb-3 all-form-section max-w-lg mx-auto" id="cash-out-parent" style="display: none;">
         <h1 class="my-5 font-bold">Cash Out</h1>
         <form action="" class="bg-white rounded-2xl p-6">
                  <div>
@@ -100,7 +100,7 @@
                     Agent Number
                     </label>
         <br>
-        <input type="text" placeholder="Enter 11 digit number" class="input !w-full bg-white mt-3 !rounded-2xl" />
+        <input id="agent-num" type="text" placeholder="Enter 11 digit number" class="input !w-full bg-white mt-3 !rounded-2xl" />
     </div>
                 <div>
                      <label class="font-semibold">Amount </label>
@@ -110,11 +110,37 @@
                  <div>
                     <label class="font-semibold">Pin Number</label>
         <br>
-        <input type="text" placeholder="Enter 4 digit Pin Number" class="input bg-white mt-3 !rounded-2xl !w-full"/> 
+        <input id="pin-num" type="text" placeholder="Enter 4 digit Pin Number" class="input bg-white mt-3 !rounded-2xl !w-full"/> 
                  </div>
                  <button id="withdraw-btn" class="btn btn-primary mt-3 w-full !rounded-3xl bg-[#0874F2]" >Withdraw Money</button>
             </form> 
     </div>
+
+    <!-- trasfer money -->
+    <div class=" all-form-section max-w-lg mx-auto mb-3" id="transfer-money-parent" style="display: none;">
+        <h1 class="my-5 font-bold">Transfer Money</h1>
+        <form action="" class="bg-white rounded-2xl p-6">
+                 <div>
+                    <label class="font-semibold"> 
+                    User Account Number
+                    </label>
+        <br>
+        <input id="user-num" type="text" placeholder="Enter 11 digit number" class="input !w-full bg-white mt-3 !rounded-2xl" />
+    </div>
+                <div>
+                     <label class="font-semibold">Amount </label>
+        <br>
+        <input id="amount-transfer" type="text" placeholder="Enter Amount to Transfer" class="input bg-white mt-3 !rounded-2xl !w-full"/>
+                </div>
+                 <div>
+                    <label class="font-semibold">Pin Number</label>
+        <br>
+        <input id="pin-number" type="text" placeholder="Enter 4 digit Pin Number" class="input bg-white mt-3 !rounded-2xl !w-full"/> 
+                 </div>
+                 <button id="send-btn" class="btn btn-primary mt-3 w-full !rounded-3xl bg-[#0874F2]" >Send Now</button>
+            </form> 
+    </div>
+ 
 
     <script src="./main.js"></script>
 </body>    
